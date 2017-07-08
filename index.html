@@ -32,6 +32,17 @@
         padding-top: 1em;
       }
 
+
+          /* Two-column inside*/
+      .left-column-inside {
+        width: 50%;
+        float: left;
+      }
+      .right-column-inside {
+        width: 50%;
+        float: right;
+      }
+
       </style>
   </head>
   <body>
@@ -58,45 +69,70 @@
       ]
       ---
 
+
+      # Site com NGINX
+
+      .center[![1](img/1.jpeg)]
+
+      ---
+
+      # Muitos usuários acessando! 😱😱😱
+
+      .center[![2](img/2.jpeg)]
+
+      ---
+
+
+      # Site com NGINX+Varnish
+
+      .center[![3](img/3.jpeg)]
+
+      ---
+
       # Varnish
 
-      * Colocar algum desenho aqui
+      ## Permite guardar conteúdo estático em memória, economizando os servidores em que a aplicação está rodando (backend)
+
+      #### Escrever mais e colocar desenho
+
+      ---
+      layout: false
+      # Hit ou Miss?
+
+      .left-column-inside[
+      ### Hit: Tenho o conteúdo no cache (não preciso ir no BackEnd)
+      #### Colocar desenho
+      ]
+      .right-column-inside[
+      ### Miss: Não tenho o conteúdo em memória (vou buscar no BackEnd)
+      #### Colocar desenho
+      ]
+
 
       ---
 
-
-      # Desenho NGINX Feliz
-
-
-      ---
-
-      # Desenho NGINX Triste
-
-
-      ---
-
-
-      # Desenho NGINX Feliz com Varnish
-
-
-      ---
-
-
-      # HIT/MISS
-
-
-      ---
 
       # Status Code
 
+      ## Cada request é entregue com um status code! 
+
+        ### 1xx : Aguenta aí! 🤔
+        ### 2xx : Aqui está! 😀
+        ### 3xx : Vai embora! 👋
+        ### 4xx : VC fez alguma coisa de errado! 🙄
+        ### 5xx : EU fiz alguma coisa de errado! 😰
+
       ---
 
-      # Problemas! D: 503
+      # Problemas!!! OMG!
 
+      .center[![4](img/4.jpeg)]
 
       ---
 
-      # StatsD + Graphite + Grafana + Zabbix
+      # Monitoração: StatsD + Graphite + Grafana + Zabbix
+
+      .center[![5](img/5.jpeg)]
 
 
       ---

@@ -101,11 +101,11 @@
 
       .left-column-inside[
       ### Hit: Tenho o conteúdo no cache (não preciso ir no BackEnd)
-      #### Colocar desenho
+      .center[![Hit](img/hit.jpeg)]
       ]
       .right-column-inside[
       ### Miss: Não tenho o conteúdo em memória (vou buscar no BackEnd)
-      #### Colocar desenho
+      .center[![Miss](img/miss.jpeg)]
       ]
 
 
@@ -151,16 +151,29 @@
 
       # Outros problemas
 
+      ## Os servidores Varnish eram instalados na mão 
+
+      ## Resolvemos isso usando Puppet e Foreman
+
+      ### Puppet: automatiza o deploy dos servidores seguindo classes que os configuram
+
+      ### Foreman: gerencia os servidores (definir classes puppet, grupos de servidores que tem configuração em comum)
+
       ---
 
       # Próximos passos
+      
+
+      ## Melhorar a configuração de certificados HTTPS
+
+      ## Melhorar a amostra de métricas que são enviadas para o Graphite
 
       ---
 
       class: center, middle, inverse
 
 
-      # Dúvidas ??? :)
+      # Dúvidas ???
 
     
 
